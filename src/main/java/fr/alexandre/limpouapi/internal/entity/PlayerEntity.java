@@ -18,4 +18,7 @@ public class PlayerEntity {
 
     private String name;
     private Lang lang;
+
+    // TODO: cache the entity at the proxy level (if the user switches servers, keep the entity in Redis)
+    // update the local entity when there is a change in Redis
 }

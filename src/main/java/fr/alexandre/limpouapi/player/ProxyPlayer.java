@@ -2,12 +2,14 @@ package fr.alexandre.limpouapi.player;
 
 import com.velocitypowered.api.proxy.Player;
 import com.velocitypowered.api.proxy.ProxyServer;
+import lombok.Getter;
 
 import java.util.UUID;
 
 public class ProxyPlayer {
 
     private final ProxyServer proxyServer;
+    @Getter
     private final UUID uuid;
 
     public ProxyPlayer(ProxyServer proxyServer, UUID uuid) {
