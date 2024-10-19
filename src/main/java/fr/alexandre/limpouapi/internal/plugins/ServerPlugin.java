@@ -18,5 +18,13 @@ public final class ServerPlugin extends JavaPlugin {
     public void onEnable() {
         // Register listeners
         getServer().getPluginManager().registerEvents(new ServerConnectionListeners(), this);
+
+        // Register server
+
+    }
+
+    @Override
+    public void onDisable() {
+
     }
 }

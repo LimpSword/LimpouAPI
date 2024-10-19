@@ -32,6 +32,7 @@ public final class DefaultConfig {
                 put("password", "password");
             }
         });
+        config.set("identifier", "unknown");
         return config;
     }
 
@@ -94,5 +95,9 @@ public final class DefaultConfig {
 
     public String getMySQLPassword() {
         return get("mysql.password", "password");
+    }
+
+    public String getIdentifier() {
+        return get("identifier", "unknown");
     }
 }

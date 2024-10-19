@@ -7,4 +7,7 @@ import java.util.UUID;
 public interface ProxyAPI extends BaseAPI {
 
     ProxyPlayer getPlayer(UUID uuid);
+
+    @Override
+    String identifier();
 }
